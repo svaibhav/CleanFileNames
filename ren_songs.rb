@@ -23,7 +23,7 @@ def action(base_path)
                 end
                 puts "#{old_name} -> #{new_name}"
                 $files_renamed += 1
-                File.rename(old_name, __s)
+                File.rename(old_name, __s.strip)
             end
         end
     end
